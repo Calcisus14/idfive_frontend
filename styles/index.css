@@ -232,6 +232,9 @@ input.search {
 input.search::placeholder {
 	color: #fff;
 }
+.arrow{
+	width: 100%;text-align: center;
+}
 @media (max-width: 1120px){}
 @media (max-width: 992px){}
 @media (max-width: 768px){
