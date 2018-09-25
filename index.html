@@ -2,13 +2,141 @@
 <html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./styles/index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<script src="./assets/js/angular.min.js"></script>
 	<script src="./assets/js/app.js"></script>
 	<title>IdFive</title>
 </head>
-<body ng-controller="index">
-	<p>{{2+2}}</p>
+<body ng-controller="index" >
+	<div class="transparent" ng-show="menu == true" ng-click="menu = false"></div>	
+	<div id="banner_index" >
+		<div id="top-menu">
+			<div class="logo_container"><img src="./assets/img/idfive-logo.svg" alt=""></div>
+			<div class="hamburguer_menu"><span ng-click="menu = true">MENU <i class="fas fa-bars"></i></span>
+				
+				<div class="menu_inside" ng-show="menu == true">
+					<p class="close_button" ng-click="menu = false">close <img src="./assets/img/close-icon.svg" alt=""></p>
+					<p class="big_menu">About us</p>
+					<p class="big_menu">Our Work</p>
+					<p class="big_menu">Meet the Team</p>
+					<p class="small_menu">Contact</p>
+					<p class="small_menu">Careers</p>
+					<p class="small_menu">Blog</p>
+					<input class="search" type="text" placeholder="Search">
+				</div>
+			</div>
+		</div>
+		<h1 class="tittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+		<div class="button-container">
+			<p class="button-CTA">CTA Button</p>
+		</div>
+		<div style="width: 100%;float: left;text-align: center">
+			<div class="arrow-down"><p><i class="fas fa-angle-down"></i></p></div>
+		</div>
+		
+	</div>
+	<section id="banner_1">
+		<div class="container_tittle_section">
+			<p class="tittle_section">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet
+				pharetra ex. Ut eu feugiat magna. Sed fermentum sem ut fermentum
+				fermentum. Duis dolor velit, dictum id imperdiet nec, lobortis a dolor.
+				Curabitur non eros condimentum.
+			</p>
+		</div>
+		<div>
+			<div class="container_info">
+				<div class="img_section">
+					<div class="icon_section">
+						<div class="circle-background"><img src="./assets/img/speech-bubbles.svg" alt=""></div>
+					</div>
+					<div>
+						<img src="./assets/img/hands.jpg" alt="">
+					</div>
+				</div>
+				<div class="info_section">
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+			</div>
+			<div class="container_info">
+				<div class="img_section">
+					<div class="icon_section">
+						<div class="circle-background"><img src="./assets/img/paper-plane.svg" alt=""></div>
+					</div>
+					<div>
+						<img src="./assets/img/table.jpg" alt="">
+					</div>
+				</div>
+				<div class="info_section">
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+			</div>
+			<div class="container_info">
+				<div class="img_section">
+					<div class="icon_section">
+						<div class="circle-background"><img src="./assets/img/rocket.svg" alt=""></div>
+					</div>
+					<div>
+						<img src="./assets/img/coffe.jpg" alt="">
+					</div>
+				</div>
+				<div class="info_section">
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="purple_section">
+		
+		<div class="text-purple firts_child"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet pharetra ex. Ut eu feugiat magna. Sed fermentum sem ut
+		fermentum fermentum. Duis dolor velit, dictum id imperdiet nec, lobortis a dolor. Curabitur non eros condimentum.</p></div>
+		<div class="button_purple"><p class="button-CTA">CTA Button</p></div>
+		
+	</section>
+	<section class="photos">
+		<div class="container_photos">
+			<div class="image_photos image_phone"><img src="./assets/img/nordwood-themes-180852-unsplash.jpg" alt=""></div>
+			<div class="text_photos">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae convallis turpis. Nam hendrerit euismod lorem interdum tempus.
+				</p>
+			</div>
+			
+		</div>
+		<div class="container_photos">
+			<div class="image_photos"><img src="./assets/img/kelly-sikkema-291518-unsplash.jpg" alt=""></div>
+			<div class="text_photos">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae convallis turpis. Nam hendrerit euismod lorem interdum tempus.
+				</p>
+			</div>
+		</div>
+	</section>
 
+	<footer >
+		<section class="purple_section">
+			<div class="container_footer firts_child"><img src="./assets/img/idfive-logo.svg" alt=""></div>
+			<div class="container_footer">
+				<p>81 Mosher Street, Third Floor</p>
+				<p>Baltimore, Maryland 21217</p>
+				<p>410.837.5555</p>
+			</div>
+			<div class="container_footer">
+				<a href="/">Contact Us</a>
+				<a href="/">Employment Opportunities</a>
+				<a href="/">Privacy Policy</a>
+			</div>
+			<div class="container_footer">
+				<div class="social_container">
+					<div class="social_icons"><img src="./assets/img/facebook.png" alt=""></div>
+					<div class="social_icons"><img src="./assets/img/twitter.png" alt=""></div>
+				</div>
+				<p>Copyright © 2009-2018. </p>
+				<p>All rights reserved.</p>
+			</div>
+		</section>
+	</footer>
 </body>
 </html>
